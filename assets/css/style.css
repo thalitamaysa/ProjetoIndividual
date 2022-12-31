@@ -1,0 +1,163 @@
+/* Aqui faço uma alteração geral da pág. como zerar as margens */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+/* Estilizando os links */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Aqui usei o scroll para ter uma rolagem no site mais suave */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Aqui altero todo o corpo do código, todo o código terá essa estilização, ao não ser os que estão sendo alterados por id */
+body{
+    font-family: 'Gabriola', Courier, monospace;
+     background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    font-size: 28px;
+}
+
+/* Alterei a posição do menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    
+}
+
+/* Alterei a posição e o fundo de dentro de tudo que tinha do id container */
+#container{
+    z-index: 1;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    
+}
+
+/* Alterando a ul toda */
+#menu ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Mexendo na margem do menu somente da linha */
+#menu ul li{
+    margin: 5px;
+    
+}
+
+/* Para dar foco e cor de fundo ao menu quando passar o cursor por cima das palavras no menu */
+#menu ul li a:hover{
+    color: rgb(34, 90, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* Alterando o texto principal como um todo dentro de uma clase */
+.textoprincipal{
+   width: 40%;
+   font-size: 25px;
+   text-align: center;
+}
+
+/* Alterando apenas o texto dentro de h2 */
+.textoprincipal h2{
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Chamando a clase foto, deixo todas as fotos com o mesmo tamanho e mesmo alinhamento */
+.foto { 
+    display: flex;
+    height: 280px;
+    width: 200px; 
+    border-radius: 20px;
+    position: absolute;
+    left: 30px; 
+
+}
+
+/* Main é o copro principal da minha pág. */
+main{
+   height: 2500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Definindo a distancia entre um conteudo e sua borda */
+section{
+    padding-top: 240px;
+}
+
+/* Aqui é para organizar e estilizar a seção inteira dentro da div */
+section div{
+    background: rgba(0, 0, 0, 0.74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+/* Esta seção é para tirar o fundo somente do texto principal */
+section div .textoprincipal{
+    background:  none;
+}
+
+/* Id para mexer no tamanho e local do formulário */
+#contato div > form{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Nesta parte eu mexo na div inteira */
+#redes div{
+    flex-direction: row!important;
+    justify-content: center;
+}
+
+/* Alterei onde meus icones das redes sociais ficariam e seu tamanho */
+#redes div > li{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 265px;
+}
+
+/* Tamanho dos icones */
+.icones{
+    width: 90px;
+}
+
+/* Alterei tamanho e local onde a imagem ficaria */
+.naruto {
+    display: flex;
+    height: 270px;
+    width: 330px; 
+    position: absolute;
+    left: 80px;
+}
+
+/* Editei um rodapé */
+#rodapé {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 500px;
+    font-size: 20px;
+}
